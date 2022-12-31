@@ -16,9 +16,6 @@ For this turorial we will examine how to read syntax created for email address. 
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -43,15 +40,13 @@ Flags are used after character classes to add contingencies to the expression. T
 Grouping is defined by parenthesis. This gives a clear distinction between ecaturing xpressions. In our example we have 3 instances of grouping. The first is the user handle, next is the server and last is the domain. 
 
 ### Bracket Expressions
+These expressions are used define ranges for characters. This shortens the code eliminating inputing every possible character. This is seen in our code by [a-z\.]. The code within the braces shortens the occurence of any letter a-z. This has to be written within braces for the hyphen no to be literal.
 
 ### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Greedy and Lazy match are versions of quantifiers that can expand your match broad or simple. Our code has instances of Greedy match in the example '[a-z0-9_\.-]+'. The plus sign instructs to look for the longest possible string of character. Lazy string would look for the shortest possible string defined by a question mark in repplacement of the plus sign.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This tutorial was created by Daven Steen who is an aspiring software developer currently enrolled in a coding bootcamp. 
+
+Github Repository: https://github.com/Dus0001/american-regex
